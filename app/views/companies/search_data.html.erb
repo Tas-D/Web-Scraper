@@ -1,0 +1,5 @@
+<form action="<%= search_data_path(format: :csv) %>" method="get" target="_blank">
+  Enter your search data: <br><br><%= text_area_tag :search_input, nil, style: "width: 600px; height: 200px;" %>
+  <br><br>
+  <%= submit_tag 'Generate CSV' %>
+</form>
